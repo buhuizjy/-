@@ -1,0 +1,24 @@
+display();//显示缓冲区图片
+clearDisplay();//清理缓冲区`
+
+drawPixel(X_POS, Y_POS, WHITE);  // 画点
+drawLine(X_POS, Y_POS,128, 64, WHITE);//画线
+drawRect(X_POS, Y_POS, width, height , WHITE); // 画一个矩形
+fillRect(X_POS, Y_POS, width, height, WHITE); // 画一个填充矩形
+drawCircle(X_POS, Y_POS, 10, WHITE); // 画一个居中半径为10的圆
+fillCircle(X_POS, Y_POS, 10, WHITE);// 画一个居中半径为10的填充圆
+fillRoundRect(X_POS, Y_POS, width, height, 14, WHITE);// 画一个带半径14圆角的填充矩形
+
+startscrollright(0x00, 0x0f);//屏幕旋转
+stopscroll();//屏幕旋转停止
+
+setTextSize(1);//设定字体大小
+setTextColor(WHITE);//设定字体颜色
+setCursor(0, 0);//设定起始点
+write(i);//字符显示，asii对应的字符
+println("Hello, world!"); // 文本显示
+
+drawBitmap(0, 0, logo_glcd_bmp_expendables[], HEIGHT, WIDTH, WHITE); // 显示一张图片
+
+invertDisplay(true); // 图形取反
+invertDisplay(false);// 取消图形取反
